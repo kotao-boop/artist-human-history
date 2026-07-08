@@ -1,2 +1,2 @@
 :HL["/artist-human-history/_next/static/chunks/2_79we72lg21d.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"chapter","param":null,"prefetchHints":0,"slots":{"children":{"name":"genesis","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"j6jvydKS0LB4bBpflBpD2"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"chapter","param":null,"prefetchHints":0,"slots":{"children":{"name":"genesis","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"m85z2RvzjOkwp6BvZTQaH"}
