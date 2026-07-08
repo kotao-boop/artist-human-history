@@ -1,2 +1,2 @@
-:HL["/artist-human-history/_next/static/chunks/3boasieomct73.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"chapter","param":null,"prefetchHints":0,"slots":{"children":{"name":"genesis","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"IzSrJQIJm4WiX45OIhMhp"}
+:HL["/artist-human-history/_next/static/chunks/22pzx5_nic2c9.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"chapter","param":null,"prefetchHints":0,"slots":{"children":{"name":"genesis","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"R4O7wK2bR6RYGfby6RGGt"}
