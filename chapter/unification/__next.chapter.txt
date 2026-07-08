@@ -2,4 +2,4 @@
 2:I[39756,["/artist-human-history/_next/static/chunks/04-w09lcqtnla.js","/artist-human-history/_next/static/chunks/14mrh2-p_w84d.js","/artist-human-history/_next/static/chunks/2axe7lbykiz8s.js","/artist-human-history/_next/static/chunks/0kq979-qj6pn9.js"],"default"]
 3:I[37457,["/artist-human-history/_next/static/chunks/04-w09lcqtnla.js","/artist-human-history/_next/static/chunks/14mrh2-p_w84d.js","/artist-human-history/_next/static/chunks/2axe7lbykiz8s.js","/artist-human-history/_next/static/chunks/0kq979-qj6pn9.js"],"default"]
 4:[]
-0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"h6OqK1TrdesWl45zeskQH"}
+0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"rIzEIlsoYmMtQDMgs19FW"}
