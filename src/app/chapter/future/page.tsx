@@ -6,7 +6,7 @@ export default function Future() {
       id="06" 
       title="THE FUTURE" 
       subtitle="サピエンスの終焉とホモ・デウス"
-      heroImage="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2000&auto=format&fit=crop"
+      heroImage="/images/future.png"
       prevChapter={{ slug: "scientific", title: "SCIENTIFIC REVOLUTION" }}
     >
       <RevealText>

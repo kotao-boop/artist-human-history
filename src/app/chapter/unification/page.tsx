@@ -6,7 +6,7 @@ export default function UnificationOfHumankind() {
       id="04" 
       title="UNIFICATION OF HUMANKIND" 
       subtitle="貨幣・帝国・宗教"
-      heroImage="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=2000&auto=format&fit=crop"
+      heroImage="/images/unification.png"
       prevChapter={{ slug: "agricultural", title: "AGRICULTURAL REVOLUTION" }}
       nextChapter={{ slug: "scientific", title: "SCIENTIFIC REVOLUTION" }}
     >

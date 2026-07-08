@@ -6,7 +6,7 @@ export default function AgriculturalRevolution() {
       id="03" 
       title="AGRICULTURAL REVOLUTION" 
       subtitle="史上最大の詐欺"
-      heroImage="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000&auto=format&fit=crop"
+      heroImage="/images/agricultural.png"
       prevChapter={{ slug: "cognitive", title: "COGNITIVE REVOLUTION" }}
       nextChapter={{ slug: "unification", title: "UNIFICATION OF HUMANKIND" }}
     >

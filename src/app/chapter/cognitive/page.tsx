@@ -6,7 +6,7 @@ export default function CognitiveRevolution() {
       id="02" 
       title="COGNITIVE REVOLUTION" 
       subtitle="虚構が紡ぐ覇権"
-      heroImage="https://images.unsplash.com/photo-1544640808-32cb4f49ed4a?q=80&w=2000&auto=format&fit=crop"
+      heroImage="/images/cognitive.png"
       prevChapter={{ slug: "genesis", title: "GENESIS" }}
       nextChapter={{ slug: "agricultural", title: "AGRICULTURAL REVOLUTION" }}
     >

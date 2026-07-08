@@ -6,7 +6,7 @@ export default function Genesis() {
       id="01" 
       title="GENESIS" 
       subtitle="原初の火、闇を照らす"
-      heroImage="https://images.unsplash.com/photo-1502481851512-e9e2529bfbf9?q=80&w=2000&auto=format&fit=crop"
+      heroImage="/images/genesis.png"
       nextChapter={{ slug: "cognitive", title: "COGNITIVE REVOLUTION" }}
     >
       <RevealText>
