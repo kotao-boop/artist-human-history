@@ -69,6 +69,22 @@ export default function Home() {
             </motion.li>
           ))}
         </ul>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 1.5 }}
+          className="mt-16 pt-8 border-t border-white/10 flex justify-center"
+        >
+          <Link 
+            href="/timeline"
+            className="group flex flex-col md:flex-row items-center md:items-baseline gap-4 py-4 hover:opacity-100 transition-opacity"
+          >
+            <span className="text-[#e5b05c] font-sans tracking-widest text-sm uppercase">APPENDIX</span>
+            <span className="text-xl md:text-2xl font-light tracking-wider text-white/70 group-hover:text-white transition-colors">TIMELINE</span>
+            <span className="text-sm text-white/50 font-serif tracking-widest group-hover:text-[#e5b05c]/80 transition-colors">永遠の系譜</span>
+          </Link>
+        </motion.div>
       </div>
     </main>
   );
