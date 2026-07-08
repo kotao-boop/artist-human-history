@@ -34,6 +34,10 @@ export default function AgriculturalRevolution() {
 
 
       <RevealText>
+        <ParallaxImage src="/images/agricultural_inline.png" alt="Ancient Clay Tablet" yOffset={60} />
+      </RevealText>
+
+      <RevealText>
         <h3>未来への不安と「所有」の誕生</h3>
         <p>
           農業は、確かに土地あたりの食糧生産量を劇的に増加させた。これにより人口は爆発的に増えた。

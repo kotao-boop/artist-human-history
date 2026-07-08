@@ -34,6 +34,10 @@ export default function UnificationOfHumankind() {
 
 
       <RevealText>
+        <ParallaxImage src="/images/unification_inline.png" alt="Ancient Roman Coin in Fire" yOffset={60} />
+      </RevealText>
+
+      <RevealText>
         <h3>帝国という溶鉱炉</h3>
         <p>
           人類の統一を推進した第二の力は「帝国」である。現代人は「帝国主義」という言葉にネガティブな印象を抱きがちだ。

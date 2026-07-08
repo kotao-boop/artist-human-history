@@ -33,6 +33,10 @@ export default function Future() {
 
 
       <RevealText>
+        <ParallaxImage src="/images/future_inline.png" alt="Supercomputer Singularity" yOffset={60} />
+      </RevealText>
+
+      <RevealText>
         <h3>至高の問い：我々は何を望むのか？</h3>
         <p>
           かつて人類を悩ませていた「飢饉」「疫病」「戦争」という三大課題は、完全に消滅してはいないものの、もはや制御不可能な自然の脅威ではなくなった。

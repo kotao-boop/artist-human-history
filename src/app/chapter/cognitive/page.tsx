@@ -32,6 +32,10 @@ export default function CognitiveRevolution() {
 
 
       <RevealText>
+        <ParallaxImage src="/images/cognitive_inline.png" alt="Ancient Neural Network" yOffset={60} />
+      </RevealText>
+
+      <RevealText>
         <h3>存在しないものを信じる力</h3>
         <p>
           150人の壁を突破させたもの。それは「虚構（フィクション）」を語る能力である。

@@ -32,6 +32,10 @@ export default function ScientificRevolution() {
 
 
       <RevealText>
+        <ParallaxImage src="/images/scientific_inline.png" alt="Galileo Telescope pointing to Supernova" yOffset={60} />
+      </RevealText>
+
+      <RevealText>
         <h3>科学・資本主義・帝国主義の螺旋</h3>
         <p>
           科学には莫大な資金が必要である。その資金を提供したのは、利益を追い求める資本家と、領土の拡大を目論む帝国だった。
