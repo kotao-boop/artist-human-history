@@ -30,9 +30,6 @@ export default function ScientificRevolution() {
         </p>
       </RevealText>
 
-      <RevealText>
-        <ParallaxImage src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=2000&auto=format&fit=crop" alt="Science and Progress" yOffset={60} />
-      </RevealText>
 
       <RevealText>
         <h3>科学・資本主義・帝国主義の螺旋</h3>

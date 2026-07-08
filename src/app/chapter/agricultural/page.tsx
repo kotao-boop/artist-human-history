@@ -32,9 +32,6 @@ export default function AgriculturalRevolution() {
         </p>
       </RevealText>
 
-      <RevealText>
-        <ParallaxImage src="https://images.unsplash.com/photo-1589923188900-85dae523342b?q=80&w=2000&auto=format&fit=crop" alt="Wheat field" yOffset={60} />
-      </RevealText>
 
       <RevealText>
         <h3>未来への不安と「所有」の誕生</h3>

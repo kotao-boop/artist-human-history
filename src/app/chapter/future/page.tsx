@@ -31,9 +31,6 @@ export default function Future() {
         </p>
       </RevealText>
 
-      <RevealText>
-        <ParallaxImage src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=2000&auto=format&fit=crop" alt="The Singularity" yOffset={60} />
-      </RevealText>
 
       <RevealText>
         <h3>至高の問い：我々は何を望むのか？</h3>

@@ -32,9 +32,6 @@ export default function UnificationOfHumankind() {
         </p>
       </RevealText>
 
-      <RevealText>
-        <ParallaxImage src="https://images.unsplash.com/photo-1542281286-9e0a16bb7366?q=80&w=2000&auto=format&fit=crop" alt="Ancient Coins / Exchange" yOffset={60} />
-      </RevealText>
 
       <RevealText>
         <h3>帝国という溶鉱炉</h3>

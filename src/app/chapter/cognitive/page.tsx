@@ -30,9 +30,6 @@ export default function CognitiveRevolution() {
         </p>
       </RevealText>
 
-      <RevealText>
-        <ParallaxImage src="https://images.unsplash.com/photo-1518002171953-a080ee817e1f?q=80&w=2000&auto=format&fit=crop" alt="Abstract connection" yOffset={60} />
-      </RevealText>
 
       <RevealText>
         <h3>存在しないものを信じる力</h3>
