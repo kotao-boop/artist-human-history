@@ -6,7 +6,9 @@ export default function ScientificRevolution() {
       id="05" 
       title="SCIENTIFIC REVOLUTION" 
       subtitle="無知の発見と際限なき力"
-      heroImage="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2000&auto=format&fit=crop"
+      heroImage="https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=2000&auto=format&fit=crop"
+      prevChapter={{ slug: "unification", title: "UNIFICATION OF HUMANKIND" }}
+      nextChapter={{ slug: "future", title: "THE FUTURE" }}
     >
       <RevealText>
         <p>

@@ -2,6 +2,7 @@
 
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Link from "next/link";
 
 function ParallaxImage({ src, alt, yOffset = 100 }: { src: string; alt: string; yOffset?: number }) {
   const ref = useRef(null);
@@ -33,15 +34,22 @@ function RevealText({ children }: { children: React.ReactNode }) {
   );
 }
 
+interface ChapterLinkInfo {
+  slug: string;
+  title: string;
+}
+
 interface ChapterProps {
   id: string;
   title: string;
   subtitle: string;
   children: React.ReactNode;
   heroImage: string;
+  prevChapter?: ChapterLinkInfo;
+  nextChapter?: ChapterLinkInfo;
 }
 
-export default function ChapterLayout({ id, title, subtitle, children, heroImage }: ChapterProps) {
+export default function ChapterLayout({ id, title, subtitle, children, heroImage, prevChapter, nextChapter }: ChapterProps) {
   return (
     <main className="pt-32 pb-48 px-6 md:px-24 max-w-5xl mx-auto relative z-10">
       <header className="mb-32 mt-12 text-center md:text-left">
@@ -60,11 +68,33 @@ export default function ChapterLayout({ id, title, subtitle, children, heroImage
         {children}
       </article>
 
-      <div className="mt-48 flex justify-center">
+      <div className="mt-48 mb-24 flex justify-center">
         <RevealText>
           <div className="w-[1px] h-32 bg-gradient-to-b from-[#e5b05c] to-transparent" />
         </RevealText>
       </div>
+
+      <RevealText>
+        <nav className="flex flex-col md:flex-row justify-between items-center gap-12 border-t border-white/10 pt-16 mt-16 font-sans">
+          {prevChapter ? (
+            <Link href={`/chapter/${prevChapter.slug}`} className="group flex flex-col items-center md:items-start transition-opacity hover:opacity-100 opacity-60">
+              <span className="text-xs tracking-widest text-[#e5b05c] mb-2 uppercase">PREVIOUS CHAPTER</span>
+              <span className="text-xl md:text-2xl tracking-widest font-light group-hover:text-white transition-colors">{prevChapter.title}</span>
+            </Link>
+          ) : <div />}
+          
+          <Link href="/" className="group flex flex-col items-center transition-opacity hover:opacity-100 opacity-60 px-8 py-3 border border-white/10 hover:border-white/30 rounded-full">
+            <span className="text-xs tracking-widest text-white uppercase">INDEX</span>
+          </Link>
+
+          {nextChapter ? (
+            <Link href={`/chapter/${nextChapter.slug}`} className="group flex flex-col items-center md:items-end transition-opacity hover:opacity-100 opacity-60">
+              <span className="text-xs tracking-widest text-[#e5b05c] mb-2 uppercase">NEXT CHAPTER</span>
+              <span className="text-xl md:text-2xl tracking-widest font-light group-hover:text-white transition-colors">{nextChapter.title}</span>
+            </Link>
+          ) : <div />}
+        </nav>
+      </RevealText>
     </main>
   );
 }
