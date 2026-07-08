@@ -53,32 +53,26 @@ export default function Timeline() {
       </div>
 
       {/* Bibliography / References Section */}
-      <RevealText>
-        <div className="mt-48 pt-24 border-t border-white/10">
-          <h3 className="text-2xl tracking-widest text-[#e5b05c] mb-12 uppercase text-center md:text-left">Selected Bibliography</h3>
-          <ul className="space-y-6 text-white/50 text-sm md:text-base font-serif leading-relaxed">
-            {referencesData.map((ref, i) => (
-              <li key={i} className="pl-4 border-l-2 border-[#e5b05c]/30 hover:text-white/80 transition-colors">
-                {ref}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </RevealText>
-
-      <div className="mt-32 mb-24 flex justify-center">
-        <RevealText>
-          <div className="w-[1px] h-32 bg-gradient-to-b from-[#e5b05c] to-transparent" />
-        </RevealText>
+      <div className="mt-48 pt-24 border-t border-white/10">
+        <h3 className="text-2xl tracking-widest text-[#e5b05c] mb-12 uppercase text-center md:text-left">Selected Bibliography</h3>
+        <ul className="space-y-6 text-white/50 text-sm md:text-base font-serif leading-relaxed">
+          {referencesData.map((ref, i) => (
+            <li key={i} className="pl-4 border-l-2 border-[#e5b05c]/30 hover:text-white/80 transition-colors">
+              {ref}
+            </li>
+          ))}
+        </ul>
       </div>
 
-      <RevealText>
-        <nav className="flex justify-center items-center border-t border-white/10 pt-16 mt-16 font-sans">
-          <Link href="/" className="group flex flex-col items-center transition-opacity hover:opacity-100 opacity-60 px-8 py-3 border border-white/10 hover:border-white/30 rounded-full">
-            <span className="text-xs tracking-widest text-white uppercase">INDEX</span>
-          </Link>
-        </nav>
-      </RevealText>
+      <div className="mt-32 mb-24 flex justify-center">
+        <div className="w-[1px] h-32 bg-gradient-to-b from-[#e5b05c] to-transparent" />
+      </div>
+
+      <nav className="flex justify-center items-center border-t border-white/10 pt-16 mt-16 font-sans">
+        <Link href="/" className="group flex flex-col items-center transition-opacity hover:opacity-100 opacity-60 px-8 py-3 border border-white/10 hover:border-white/30 rounded-full">
+          <span className="text-xs tracking-widest text-white uppercase">INDEX</span>
+        </Link>
+      </nav>
     </main>
   );
 }
