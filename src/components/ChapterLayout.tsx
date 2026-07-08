@@ -9,11 +9,14 @@ function ParallaxImage({ src, alt, yOffset = 100 }: { src: string; alt: string; 
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
   const y = useTransform(scrollYProgress, [0, 1], [-yOffset, yOffset]);
   
+  // Handle GitHub pages basePath for local images
+  const imageSrc = src.startsWith("http") ? src : `/artist-human-history${src}`;
+  
   return (
     <div ref={ref} className="w-full h-[60vh] overflow-hidden relative opacity-60 mix-blend-lighten grayscale hover:grayscale-0 transition-all duration-1000 my-24">
       <motion.img 
         style={{ y, scale: 1.2 }}
-        src={src} 
+        src={imageSrc} 
         alt={alt} 
         className="w-full h-full object-cover"
       />
