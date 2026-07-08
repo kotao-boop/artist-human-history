@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { RevealText } from "@/components/ChapterLayout";
 import eventsData from "./events.json";
+import referencesData from "./references.json";
 
 export default function Timeline() {
   return (
@@ -51,7 +52,21 @@ export default function Timeline() {
         ))}
       </div>
 
-      <div className="mt-48 mb-24 flex justify-center">
+      {/* Bibliography / References Section */}
+      <RevealText>
+        <div className="mt-48 pt-24 border-t border-white/10">
+          <h3 className="text-2xl tracking-widest text-[#e5b05c] mb-12 uppercase text-center md:text-left">Selected Bibliography</h3>
+          <ul className="space-y-6 text-white/50 text-sm md:text-base font-serif leading-relaxed">
+            {referencesData.map((ref, i) => (
+              <li key={i} className="pl-4 border-l-2 border-[#e5b05c]/30 hover:text-white/80 transition-colors">
+                {ref}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </RevealText>
+
+      <div className="mt-32 mb-24 flex justify-center">
         <RevealText>
           <div className="w-[1px] h-32 bg-gradient-to-b from-[#e5b05c] to-transparent" />
         </RevealText>
