@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useCinematic } from "@/components/CinematicProvider";
 
 const chapters = [
   { id: "01", slug: "genesis", title: "GENESIS", subtitle: "原初の火、闇を照らす" },
@@ -14,13 +15,15 @@ const chapters = [
 ];
 
 export default function Home() {
+  const { isCinematic, toggleCinematic } = useCinematic();
+
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center px-6 py-32">
+    <main className="min-h-screen flex flex-col items-center justify-center px-6 py-32 relative">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5, ease: "easeOut" }}
-        className="text-center mb-24"
+        className="text-center mb-16"
       >
         <h1 className="text-5xl md:text-8xl lg:text-[10rem] font-light tracking-widest mb-6 text-glow opacity-90">
           サピエンス
@@ -29,6 +32,16 @@ export default function Home() {
           Chronicle of Humanity
         </p>
       </motion.div>
+
+      <motion.button
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2, delay: 1 }}
+        onClick={toggleCinematic}
+        className={`mb-24 px-8 py-3 border tracking-widest text-xs font-sans transition-all duration-700 ${isCinematic ? 'border-[#e5b05c] text-[#e5b05c] shadow-[0_0_20px_rgba(229,176,92,0.3)] bg-[#e5b05c]/10' : 'border-white/30 text-white/50 hover:border-white hover:text-white'}`}
+      >
+        {isCinematic ? "EXIT CINEMATIC MODE" : "ENTER CINEMATIC EXPERIENCE"}
+      </motion.button>
 
       <div className="w-full max-w-4xl">
         <ul className="flex flex-col gap-6">
